@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#navbar{
+    width: 100%;
+    height: 50px;
+    background: #fffbed;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    #logotxt{
+        width: 90px;
+    }
+    #logo{
+        width: 60%;
+    }
+    
+    .hamburger{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 5px;
+        span{
+            width: 100%;
+            height: 1px;
+            border: 2px solid burlywood;
+            border-radius: 50px;
+        }
+        #frst{
+            width: 40%;
+        }
+        #snd{
+            width: 65%;
+        }
+    }
+}
+
+.hamelement{
+    width: 300px;
+    height: 100vh;
+    background: wheat;
+    position: absolute;
+    transform: translateX(-300px);
+    transition: 0.5s;
+    top: 0;
+    z-index: 50;
+    #hamcross{
+        width: 100%;
+        text-align: right;
+        font-size: 32px;
+        font-weight: bold;
+        padding-right: 15px;
+    }
+}
+
+
+.gallery{
+    width: 100%;
+    height: 100vh;
+    background-image: url('src/gallerybg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    #slidebar{
+        width: 96%;
+        height: 300px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+           width: 100%; 
+        }
+    }
+}
+
+#allimg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: 600px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    img{
+        width: 190px;
+        margin: 10px;
+    }
+}
+
+#big{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -400;
+    background: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgcross{
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 32px;
+}
+
+#about{
+    width: 100vw;
+    background: #fff4da;
+    margin-top: 20px;
+    img{
+        width: 100%;
+    }
+}
+
+.contect{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+
+    #write{
+        width: 96%;
+        height: 260px;
+        outline: none;
+        background: #fff4da;
+        border: 1px solid brown;
+        padding: 10px;
+    }
+    button{
+        padding: 20px;
+        margin: 8px;
+        background: #fff4da;
+        border: 1px solid brown;
+        color: brown;
+        font-weight: bold;
+    }
+    #con{
+        width: 300px;
+        background: brown;
+        color: white;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #FFEAB8;
+}
+
+#cons{
+    width: 100vw;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    p{
+        text-align: center;
+        i{
+            margin: 5px;
+        }
+    }
+
+}
+    #endtxt{
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        color: #B29731;
+        margin-top: 20px;
+    }
+#copyrt{
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    font-weight: bold;
+}
+
+#logo2{
+    width: 200px;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+#element{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: column;
+    text-align: center;
+    ul{
+        li{
+            list-style: none;
+            margin: 20px;
+            font-weight: bold;
+            color: #83705C;
+            padding: 10px;
+        }
+    }
+}
+
+.active{
+    background: #FFA54A;
+    color: white;
+}
